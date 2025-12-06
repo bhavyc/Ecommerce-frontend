@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Backend URL set kar raha hu
 const api = axios.create({
-  baseURL: "http://localhost:5000/api", // Tere server ka URL
+  baseURL: "https://ecommerce-backend-kicc.onrender.com", // Tere server ka URL
 });
 
 // 🧐 CONCEPT: Interceptors
