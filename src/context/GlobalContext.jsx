@@ -13,7 +13,7 @@ export const GlobalProvider = ({ children }) => {
     try {
       const { data } = await api.get("/auth/profile");
       setUser(data.data.user);
-      const cartRes = await api.get("/cart");
+      const cartRes = await api.get("/api/cart");
       if(cartRes.data.success) {
         setCartCount(cartRes.data.cart.items.length);
       }
